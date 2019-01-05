@@ -1,8 +1,4 @@
-# mailsender
-.net basic fluent mail sender
-
-<pre><code class='language-cs'>
-using MailSender;
+﻿using MailSender;
 
 namespace ExampleMailSender
 {
@@ -24,4 +20,3 @@ namespace ExampleMailSender
         }
     }
 }
-</code></pre>
