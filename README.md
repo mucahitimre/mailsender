@@ -1,7 +1,7 @@
 # mailsender
 .net basic fluent mail sender
 
-<pre><code class='language-cs'>
+<pre><code class='highlight highlight-source-cs'>
 using MailSender;
 
 namespace ExampleMailSender
