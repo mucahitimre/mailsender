@@ -7,7 +7,6 @@ internal class Program
     private static void Main()
     {
         Mail.Setting<MailSettingProvider>(w => w.GMailSetting)
-            //.Credential(new MailCredential("myMail@mail.com","psw")) // Optionally
             .Credential("myMail@mail.com", "psw")
             .Body("html body", true)
             //.From("example@mail.com")  - Optionally
