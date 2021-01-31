@@ -45,10 +45,12 @@
     <Compile Include="MailCredential.cs" />
     <Compile Include="MailSender.cs" />
     <Compile Include="MailSenderBuilder.cs" />
-    <Compile Include="MailSetting.cs" />
-    <Compile Include="MailSettingProvider.cs" />
+    <Compile Include="IMailSetting.cs" />
+    <Compile Include="Senders\GMailSetting.cs" />
+    <Compile Include="Senders\OutlookSetting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

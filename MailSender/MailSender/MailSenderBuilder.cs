@@ -10,16 +10,13 @@ namespace MailSender
     /// </summary>
     public class MailSenderBuilder
     {
-        /// <summary>
-        /// The mail sender
-        /// </summary>
         private readonly MailSender _mailSender = new MailSender();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MailSenderBuilder"/> class.
         /// </summary>
         /// <param name="mailSetting">The mail setting.</param>
-        public MailSenderBuilder(MailSetting mailSetting)
+        public MailSenderBuilder(IMailSetting mailSetting)
         {
             _mailSender.MailSetting = mailSetting;
         }
@@ -93,18 +90,6 @@ namespace MailSender
         public MailSenderBuilder Credential(string email, string password)
         {
             _mailSender.MailCredential = new MailCredential(email, password);
-
-            return this;
-        }
-
-        /// <summary>
-        /// Credentials the specified credential.
-        /// </summary>
-        /// <param name="credential">The credential.</param>
-        /// <returns></returns>
-        public MailSenderBuilder Credential(MailCredential credential)
-        {
-            _mailSender.MailCredential = credential;
 
             return this;
         }

@@ -1,4 +1,5 @@
 ﻿using MailSender;
+using MailSender.Senders;
 
 namespace ExampleMailSender
 {
@@ -6,7 +7,7 @@ namespace ExampleMailSender
     {
         private static void Main()
         {
-            Mail.Setting<MailSettingProvider>(w => w.GMailSetting)
+            Mail.Setting<GMailSetting>()
                 //.Credential(new MailCredential("myMail@mail.com","psw")) // Optionally
                 .Credential("myMail@mail.com", "psw")
                 .Body("html body", true)
