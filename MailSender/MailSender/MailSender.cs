@@ -13,7 +13,6 @@ namespace MailSender
         public MailSender()
         {
             ToList = new List<string>();
-            MailSetting = new MailSetting();
             MailCredential = new MailCredential();
         }
 
@@ -79,7 +78,7 @@ namespace MailSender
         /// <value>
         /// The mail setting.
         /// </value>
-        public MailSetting MailSetting { get; set; }
+        public IMailSetting MailSetting { get; set; }
 
         /// <summary>
         /// Gets or sets the mail credential.

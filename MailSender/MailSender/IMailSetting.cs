@@ -3,7 +3,7 @@
     /// <summary>
     /// The mail setting
     /// </summary>
-    public class MailSetting
+    public interface IMailSetting
     {
         /// <summary>
         /// Gets or sets the host.
@@ -11,7 +11,7 @@
         /// <value>
         /// The host.
         /// </value>
-        public string Host { get; set; }
+        string Host { get; }
 
         /// <summary>
         /// Gets or sets the port.
@@ -19,7 +19,7 @@
         /// <value>
         /// The port.
         /// </value>
-        public int Port { get; set; }
+        int Port { get; }
 
         /// <summary>
         /// Gets or sets a value indicating whether [enable SSL].
@@ -27,6 +27,6 @@
         /// <value>
         ///   <c>true</c> if [enable SSL]; otherwise, <c>false</c>.
         /// </value>
-        public bool EnableSsl { get; set; }
+        bool EnableSsl { get; }
     }
 }
