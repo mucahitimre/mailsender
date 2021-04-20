@@ -1,5 +1,5 @@
 # mailsender
-.net basic fluent mail sender
+c# basic fluent mail sender
 
 ```cs
 internal class Program
