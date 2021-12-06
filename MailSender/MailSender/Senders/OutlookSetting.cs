@@ -1,7 +1,7 @@
 ﻿namespace MailSender.Senders
 {
     /// <summary>
-    /// outlook setting
+    /// The outlook setting
     /// </summary>
     public class OutlookSetting : IMailSetting
     {
