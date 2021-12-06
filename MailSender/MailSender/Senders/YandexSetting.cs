@@ -1,19 +1,19 @@
 ﻿namespace MailSender.Senders
 {
     /// <summary>
-    /// The outlook setting
+    /// The yandex setting
     /// </summary>
-    public class OutlookSetting : IMailSetting
+    public class YandexSetting : IMailSetting
     {
         /// <summary>
         /// The host 
         /// </summary>
-        public string Host => "smtp-mail.outlook.com";
+        public string Host => "smtp.yandex.com";
 
         /// <summary>
         /// the port
         /// </summary>
-        public int Port => 587;
+        public int Port => 465;
 
         /// <summary>
         /// The enable ssl
